@@ -1,0 +1,493 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+@font-face {
+  font-family: 'martelbold';
+  src: url('../fonts/martel-bold-webfont.woff2') format('woff2'),
+       url('../fonts/martel-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'martelregular';
+  src: url('../fonts/martel-regular-webfont.woff2') format('woff2'),
+       url('../fonts/martel-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src:url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family:'OpenSans_Condensed-Regular';
+  src: url('../fonts/OpenSans_Condensed-Regular_1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'OpenSans_Condensed-Bold';
+  src:url('../fonts/OpenSans_Condensed-Bold_1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+:root {
+  
+  --primary-color: #D0A144;
+  --dark-background-color: #04251f;
+  --light-blue:#0F6A9F;
+  --secondary-color: #295C7A;
+  --second-text-color:#737373;
+}
+#home{
+  background-color: #5d8582;
+}
+header{
+  height: 120px;
+}
+header section.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header section.wrapper div.left{}
+header section.wrapper div.left h1{
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffff;
+}
+header section.wrapper div.middle{}
+header section.wrapper div.middle ul{
+  display: flex;
+}
+header section.wrapper div.middle ul li{
+  margin-right: 20px;
+}
+header section.wrapper div.middle ul li:last-child{
+  margin-right: 0;
+}
+header section.wrapper div.middle ul li a{
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 900;
+}
+header section.wrapper div.middle ul li a img{}
+header section.wrapper div.right{}
+header section.wrapper div.right img{}
+#spotlight{
+}
+#spotlight section.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#spotlight section.wrapper div.left{}
+#spotlight section.wrapper div.left h1{
+  color: #ffff;
+  font-size: 50px;
+  font-weight: 900;
+}
+#spotlight section.wrapper div.left p{
+  margin-top: 40px;
+  color: #ffff;
+  font-size: 22px;
+}
+#spotlight section.wrapper div.left ul{
+  display: flex;
+  margin-top: 40px;
+}
+#spotlight section.wrapper div.left ul li{
+  margin-right: 30px;
+}
+#spotlight section.wrapper div.left ul li:last-child{
+  margin-right: 0;
+}
+#spotlight section.wrapper div.left ul li.buttonone a{
+  color: #ffff;
+  background-color: goldenrod;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+#spotlight section.wrapper div.left ul li.buttontwo a{
+  color: #ffff;
+  border: 1px solid #ffff;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+#spotlight section.wrapper div.right{
+  height: 550px;
+}
+#spotlight section.wrapper div.right img{
+  height: 100%;
+}
+#featurs{
+  background-color: var(--dark-background-color);
+}
+#featurs section.wrapper{}
+#featurs section.wrapper div.top{}
+#featurs section.wrapper div.top h1{
+  padding-top: 70px;
+  font-size: 50px;
+  color: #ffff;
+  text-align: center;
+}
+#featurs section.wrapper div.top p{
+  margin-top: 20px;
+  color: #ffff;
+  font-size: 16px;
+  text-align: center;
+}
+#featurs section.wrapper div.bottom{
+  display: flex;
+  justify-content: space-between;
+}
+#featurs section.wrapper div.bottom div.box{
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  background-color: #fff;
+  padding: 25px 130px;
+}
+#featurs section.wrapper div.bottom div.box.middle{
+  background-color: var(--light-blue);
+}
+#featurs section.wrapper div.bottom div.box a{}
+#featurs section.wrapper div.bottom div.box a img{}
+#featurs section.wrapper div.bottom div.box h3{
+  margin-top: 10px;
+}
+#service{
+  background-color: var(--dark-background-color);
+}
+#service section.wrapper{}
+#service section.wrapper div.top{}
+#service section.wrapper div.top h1{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 40px;
+  color: #ffff;
+}
+#service section.wrapper div.top p{
+  text-align: center;
+  color: #ffff;
+  margin-top: 20px;
+}
+#service section.wrapper div.bottom{
+  padding-bottom: 100px;
+  margin-top: 60px;
+  justify-content: space-between;
+  display: flex;
+}
+#service section.wrapper div.bottom div.card{
+  height: 300px;
+  background-color: #fff;
+  width: 23%;
+}
+#service section.wrapper div.bottom div.card.one{
+  height: 315px;
+}
+#service section.wrapper div.bottom div.card h3{
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 25px;
+  width: 100%;
+}
+#service section.wrapper div.bottom div.card p{
+  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 100%;
+}
+#service section.wrapper div.bottom div.card img{
+  height: 50%;
+  width: 100%;
+}
+#service section.wrapper div.bottom div.card.one img{
+  height: 52%;
+}
+#video{
+  background-color: var(--dark-background-color);
+}
+#video section.wrapper{}
+#video section.wrapper div.top{
+  padding-top: 100px;
+  text-align: center;
+}
+#video section.wrapper div.top h1{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+}
+#video section.wrapper div.top p{
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+#video section.wrapper div.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#video section.wrapper div.bottom div.left{}
+#video section.wrapper div.bottom div.left img{}
+#video section.wrapper div.bottom div.left div.no{
+  background-color: var(--secondary-color);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -265px;
+  left: 250px;
+  border-radius: 50%;
+}
+#video section.wrapper div.bottom div.left div.no a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 35px;
+  left: 42px;
+}
+#video section.wrapper div.bottom div.left div.no a img{
+  display: inline-block;
+  text-align: center;
+}
+#video section.wrapper div.bottom div.right{
+  margin-top: -70px;
+}
+#video section.wrapper div.bottom div.right h1{
+  color: #ffff;
+  font-size: 50px;
+}
+#video section.wrapper div.bottom div.right p{
+  margin-top: 20px;
+  color: #fff;
+}
+#video section.wrapper div.bottom div.right div.one{
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#video section.wrapper div.bottom div.right div.one span{
+  color: #fff;
+  font-size: 20px;
+  margin-left: -33px;
+  position: relative;
+  left: 45px;
+}
+#video section.wrapper div.bottom div.right div.one img{
+  position: relative;
+  top: 8px;
+}
+#contact{
+  background-color: var(--dark-background-color);
+}
+#contact section.wrapper{}
+#contact section.wrapper div.top{
+  text-align: center;
+  padding-top: 50px;
+}
+#contact section.wrapper div.top h1{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+}
+#contact section.wrapper div.top p{
+  color: #ffff;
+  margin-top: 7px;
+}
+#contact section.wrapper div.bottom{
+  height: 450px;
+  margin-top: 90px;
+}
+#contact section.wrapper div.bottom div.back{
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+#contact section.wrapper div.bottom div.back div.left{
+  text-align: center;
+  margin-left: 60px;
+}
+#contact section.wrapper div.bottom div.back div.right{
+  margin-right: 60px;
+  text-align: center;
+}
+#contact section.wrapper div.bottom div.back img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#contact section.wrapper div.bottom div.back p{
+  font-family: 'martelregular';
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+#contact section.wrapper div.bottom div.back h3{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+#contact section.wrapper div.bottom div.back a.border{
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+#contact section.wrapper div.bottom div.front{
+  background-color: var(--light-blue);
+  width: 30%;
+  height: 350px;
+  text-align: center;
+  position: relative;
+  left: 400px;
+  bottom: 325px;
+}
+#contact section.wrapper div.bottom div.front img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#contact section.wrapper div.bottom div.front p{
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+#contact section.wrapper div.bottom div.front p a{
+  color: #fff;
+  font-family: 'martelregular';
+}
+#contact section.wrapper div.bottom div.front h3{
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+#contact section.wrapper div.bottom div.front a.border{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+footer{
+  background-color: var(--dark-background-color);
+}
+footer section.wrapper{}
+footer section.wrapper div.top{
+  display: flex;
+  justify-content: space-between;
+}
+footer section.wrapper div.top div.left p{
+  color: #fff;
+  margin-bottom: 40px;
+}
+footer section.wrapper div.top div.left h3{
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+footer section.wrapper div.top div.right a{
+  color: #ffff;
+  background-color: var(--primary-color);
+  padding: 8px 24px;
+  border-radius: 5px;
+}
+footer  div.middle{
+  display: flex;
+  background-color: var(--light-blue);
+}
+footer div.middle div.card{
+  margin-right: 100px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+footer div.middle div.card ul{}
+footer div.middle div.card:first-child{
+  margin-left: 60px;
+}
+footer div.middle div.card ul li{
+  margin-bottom: 10px;
+}
+footer div.middle div.card h3{
+  color: #ffff;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+footer div.middle div.card ul li a{
+  color: #fff;
+}
+footer div.middle div.card ul li img{
+  height: 20px;
+  width: 20px;
+}
+footer div.middle div.card ul.one li a{
+  position: relative;
+  left: 35px;
+  bottom: 21px;
+}
+footer div.middle div.card ul.one li{
+  margin-bottom: 0;
+}
+footer div.bottom{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div.bottom p{
+  font-weight: 600;
+  color: #fff;
+}
+footer div.bottom div.right a img{
+  margin-right: 20px;
+}
+footer div.bottom div.right a img:last-child{
+}
+@media all and (max-width:1280px) {
+  #featurs section.wrapper div.bottom div.box{
+    padding: 25px 100px;
+  }
+}
+@media all and (max-width:980px) {}
+@media all and (max-width:768px) {}
+@media all and (max-width:640px) {}
+@media all and (max-width:480px) {}
+@media all and (max-width:360px) {}
+@media all and (max-width:320px) {}
